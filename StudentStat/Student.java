@@ -1,5 +1,5 @@
 package StudentStat;
-public class Student{
+class Student{
     private String name;
     private int age;
     private String grade;
