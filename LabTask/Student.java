@@ -1,11 +1,31 @@
 class Student{
-    public  String name;
-    public String id;
-    public float cgpa;
+    private  String name;
+    private String id;
+    private float cgpa;
     public Student(String n, String i, float cg){
         name=n;
         id=i;
         cgpa=cg;
+    }
+    public void setName(String n){
+        name=n;
+    }
+    public void setId(String i){
+        id=i;
+    }
+    public void setCgpa(float cg){
+        if(cg >= 0.0f && cg <= 4.0f){
+            cgpa=cg;
+        }
+    }
+    public String getName(){
+        return name;
+    }
+    public String getId(){
+        return id;
+    }
+    public float getCgpa(){
+        return cgpa;
     }
     public Student(){
         name="";
