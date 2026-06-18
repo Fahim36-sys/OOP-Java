@@ -17,6 +17,9 @@ class Student{
         if(cg >= 0.0f && cg <= 4.0f){
             cgpa=cg;
         }
+        else{
+            System.out.println("Invalid CGPA/CGPA not entered");
+        }
     }
     public String getName(){
         return name;
