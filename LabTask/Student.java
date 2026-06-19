@@ -37,8 +37,10 @@ class Student{
         cgpa=0.0f;
     }
     public void show(){
+        System.out.println("---------------------------------");
         System.out.println("Name: "+name);
         System.out.println("ID: "+id);
         System.out.println("CGPA: "+cgpa);
+        System.out.println("---------------------------------");
     }
 }
