@@ -18,7 +18,8 @@ class Student{
             cgpa=cg;
         }
         else{
-            System.out.println("Invalid CGPA for " + name + "/CGPA not entered");
+            System.out.println("Invalid CGPA for "+name+"/CGPA set to 0.0");
+            cgpa=0.0f;
         }
     }
     public String getName(){
