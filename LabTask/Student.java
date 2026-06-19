@@ -5,7 +5,7 @@ class Student{
     public Student(String n, String i, float cg){
         name=n;
         id=i;
-        cgpa=cg;
+        setCgpa(cg);
     }
     public void setName(String n){
         name=n;
@@ -18,7 +18,7 @@ class Student{
             cgpa=cg;
         }
         else{
-            System.out.println("Invalid CGPA/CGPA not entered");
+            System.out.println("Invalid CGPA for " + name + "/CGPA not entered");
         }
     }
     public String getName(){
