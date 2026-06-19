@@ -3,8 +3,8 @@ class Student{
     private String id;
     private float cgpa;
     public Student(String n, String i, float cg){
-        name=n;
-        id=i;
+        setName(n);
+        setId(i);
         setCgpa(cg);
     }
     public void setName(String n){
