@@ -2,6 +2,7 @@ class Student{
     private  String name;
     private String id;
     private float cgpa;
+    public static float probationLimit=2.5f;
     public Student(String n, String i, float cg){
         setName(n);
         setId(i);
@@ -18,7 +19,6 @@ class Student{
             cgpa=cg;
         }
         else{
-            System.out.println("Invalid CGPA for "+name+"/CGPA set to 0.0");
             cgpa=0.0f;
         }
     }
@@ -37,6 +37,12 @@ class Student{
         cgpa=0.0f;
     }
     public void show(){
+        if(cgpa < probationLimit){
+            System.out.println(name+" is on probation!");
+        }
+        if(cgpa>4.0f || cgpa<0.0f){
+            System.out.println(name+" has an invalid CGPA!");
+        }
         System.out.println("---------------------------------");
         System.out.println("Name: "+name);
         System.out.println("ID: "+id);
